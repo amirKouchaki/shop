@@ -26,7 +26,7 @@
                                                             class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                                                             <img src="{{asset('storage/'.$product->avatar)}}"
                                                                  alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                                                                 class="w-400 h-400 object-center object-cover group-hover:opacity-75">
+                                                                 class=" w-400 object-center object-cover group-hover:opacity-75" style="aspect-ratio:1; height: 192px;">
 
                                                         </div>
                                                         <div class="align-text-bottom">

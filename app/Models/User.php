@@ -49,7 +49,7 @@ class User extends Authenticatable
         return $this->hasMany(User::class,'super_id','id');
     }
     public function factors(){
-        return $this->hasMany(Masterfact::class,'user_id');
+        return $this->hasMany(MasterFact::class,'user_id');
     }
 
     /**

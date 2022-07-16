@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Customer;
 use App\Models\DetailFact;
-use App\Models\masterFact;
+use App\Models\MasterFact;
 use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -37,7 +37,7 @@ class MasterFactController extends Controller
 
         $masterFactAttributes = [
             'user_id' => auth()->id(),
-            'customer_id' => (int)\request('customer_id'),
+            'customer_id' => request('customer_id'),
             'sum_price' => $sumPrice,
             'end_price' => $sumPrice,
             'discount' => 0,
