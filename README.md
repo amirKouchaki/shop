@@ -1,64 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Usage
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+to see this project on your local machine do the following steps.
 
-## About Laravel
+- Clone the repository with `git clone`
+- Copy `.env.example` file to `.env` and edit database credentials there
+- Run `composer install`
+- Run `php artisan key:generate`
+- Create the Database
+- Run `php artisan migrate --seed` (it has some seeded data - see below)
+- Run `php artisan storage:link`
+- The admin credentials are email: "amir@gmail.com" & password: "password"
+- You can see the emails of the employees when you log in as admin (the password of all employees is "password")
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## About the project
 
-## Learning Laravel
+This is an e-commerce website that has admins and employees. Admins can hire and register employees. They can also add products which their employees can sell to customers and they can edit the added products(yet to be implemented).As well as registering employees, they have full access to the list of the employees hired.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+As for the employees they can choose from the products that admin has provided and sell them to the customers of their choosing if the product is available in stock. They also have a shopping cart that is saved even if they logout and login again. They can edit the amount of the chosen item(not yet implemented) or delete it in its entirety.if the shopping cart is not empty they can choose the customer and finalize the purchase.The receipt of this transaction is available in the factors page.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## ScreenShots
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Admin
 
-### Premium Partners
+![Screenshot from 2022-07-16 19-03-13](https://user-images.githubusercontent.com/81798641/179359217-7909caf4-5f7c-43d8-aa5c-75e9e20b89ef.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
 
-## Contributing
+![Screenshot from 2022-07-16 19-03-17](https://user-images.githubusercontent.com/81798641/179359246-8e7611c6-e586-4ad3-9868-0e173cc45a6c.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+![Screenshot from 2022-07-16 19-03-20](https://user-images.githubusercontent.com/81798641/179359259-c7766300-2533-4a4c-8c47-88654eef641b.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+![Screenshot from 2022-07-16 19-03-26](https://user-images.githubusercontent.com/81798641/179359284-e5492186-7f4d-4c29-a1e6-49a72c096cdd.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Employee
+
+![Screenshot from 2022-07-16 19-05-41](https://user-images.githubusercontent.com/81798641/179359375-0fe9a02c-c0bc-4430-a076-47f0b397a9b0.png)
+
+
+![Screenshot from 2022-07-16 19-06-34](https://user-images.githubusercontent.com/81798641/179359402-514a1f92-3de5-48b0-a03a-c3bde3076dde.png)
+
+
+![Screenshot from 2022-07-16 19-06-57](https://user-images.githubusercontent.com/81798641/179359412-f1ffaf18-aca6-4005-a2d6-2a7478ad7c30.png)
